@@ -244,23 +244,9 @@ doxygen Doxyfile
 - **Supervisor akademicki**: Dr hab. inż. [Imię Nazwisko], prof. AGH
 - **Instytucja**: Akademia Górniczo-Hutnicza im. Stanisława Staszica
 
-## Licencja
-
-Projekt jest udostępniony na licencji MIT. Szczegóły w pliku `LICENSE`.
-
 ## Bibliografia i źródła
 
 1. Burden, R.L., Faires, J.D., Burden, A.M. *Numerical Analysis*, 10th Edition, Cengage Learning, 2015.
 2. Press, W.H., Teukolsky, S.A., Vetterling, W.T., Flannery, B.P. *Numerical Recipes in C++*, 3rd Edition, Cambridge University Press, 2007.
 3. Kincaid, D., Cheney, W. *Numerical Analysis: Mathematics of Scientific Computing*, 3rd Edition, Brooks/Cole, 2002.
 4. Materiały dydaktyczne z przedmiotu "Metody Numeryczne", Wydział Informatyki, Elektroniki i Telekomunikacji AGH.
-
-## Kontakt
-
-W przypadku pytań lub zgłaszania błędów, prosimy o kontakt:
-- **Email**: [student_email]@student.agh.edu.pl
-- **GitHub Issues**: [Link do repozytorium]/issues
-- **Instytucja**: AGH Uniwersytet Nauki i Technologii, Kraków
-
----
-*Dokumentacja wygenerowana automatycznie dla wersji 1.0.0*
