@@ -1,7 +1,7 @@
 /**
  * @file test_approximation.cpp
  * @brief Comprehensive test suite for approximation methods
- * @author AGH University Student
+ * @author Grzegorz Paszek F. Rozanski
  */
 
 #include "approximation.h"

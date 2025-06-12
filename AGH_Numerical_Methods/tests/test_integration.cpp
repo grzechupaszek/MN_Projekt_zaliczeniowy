@@ -1,7 +1,6 @@
 /**
  * @file test_integration.cpp
  * @brief Comprehensive test suite for numerical integration methods
- * @author AGH University Student
  */
 
 #include "integration.h"

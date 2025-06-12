@@ -1,7 +1,7 @@
 /**
  * @file run_tests.cpp
  * @brief Framework testów jednostkowych dla AGH Numerical Methods Library
- * @author Student Inżynierii Obliczeniowej AGH
+ * @author Grzegorz Paszek F. Roozanski
  * @details System testowania implementujący uproszczony framework testów
  *          jednostkowych z raportowaniem wyników i diagnostyką błędów
  */
