@@ -497,5 +497,61 @@ std::vector<double> Approximation::solve_normal_equations(
     
     return solution.is_valid ? solution.x : std::vector<double>();
 }
+Approximation::ApproximationResult Approximation::weighted_polynomial_approximation(
+    const std::vector<double>& x_data,
+    const std::vector<double>& y_data,
+    const std::vector<double>& weights,
+    int degree) {
+    
+    ApproximationResult result;
+    result.method = "Weighted Polynomial Approximation";
+    result.degree = degree;
+    
+    if (x_data.size() != y_data.size() || x_data.size() != weights.size() || x_data.empty()) {
+        std::cerr << "Błąd: Niezgodne rozmiary danych lub puste dane" << std::endl;
+        return result;
+    }
+    
+    if (degree < 0 || degree >= static_cast<int>(x_data.size())) {
+        std::cerr << "Błąd: Niepoprawny stopień wielomianu" << std::endl;
+        return result;
+    }
+    
+    int n = x_data.size();
+    int m = degree + 1; // Liczba współczynników
+    
+    // Budowa macierzy A układu równań normalnych z wagami: A^T * W * A * c = A^T * W * y
+    std::vector<std::vector<double>> ATA(m, std::vector<double>(m, 0.0));
+    std::vector<double> ATy(m, 0.0);
+    
+    // Wypełnienie macierzy A^T * W * A i wektora A^T * W * y
+    for (int i = 0; i < m; ++i) {
+        for (int j = 0; j < m; ++j) {
+            for (int k = 0; k < n; ++k) {
+                ATA[i][j] += weights[k] * std::pow(x_data[k], i + j);
+            }
+        }
+        
+        for (int k = 0; k < n; ++k) {
+            ATy[i] += weights[k] * y_data[k] * std::pow(x_data[k], i);
+        }
+    }
+    
+    // Rozwiązanie układu równań normalnych
+    auto solution = LinearSystems::gauss_elimination(ATA, ATy);
+    
+    if (!solution.is_valid) {
+        std::cerr << "Błąd: Nie można rozwiązać układu równań normalnych" << std::endl;
+        return result;
+    }
+    
+    result.coefficients = solution.x;
+    result.is_valid = true;
+    
+    // Obliczenie statystyk jakości aproksymacji
+    result = compute_approximation_statistics(x_data, y_data, result);
+    
+    return result;
+}
 
 } // namespace agh_numerical

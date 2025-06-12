@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/nonlinear_equations.h
+vector
+-
+functional
+-
+string
+-
+
+/workspaces/MN_Projekt_zaliczeniowy/AGH_Numerical_Methods/tests/test_nonlinear_equations.cpp
+nonlinear_equations.h
+/workspaces/MN_Projekt_zaliczeniowy/AGH_Numerical_Methods/tests/nonlinear_equations.h
+iostream
+-
+iomanip
+-
+cmath
+-
+functional
+-
+chrono
+-
+

@@ -8,7 +8,7 @@
 #include <iomanip>
 #include <cmath>
 #include <vector>
-
+#include <functional>
 using namespace agh_numerical;
 
 /**
@@ -395,4 +395,16 @@ bool run_all_interpolation_tests() {
               << (100.0 * passed / total) << "%)" << std::endl;
     
     return (passed == total);
+}
+/**
+ * @brief Punkt wejścia programu testowego
+ */
+int main() {
+    if (run_all_interpolation_tests()) {
+        std::cout << "\nWszystkie testy interpolacji przeszły pomyślnie!" << std::endl;
+        return 0;
+    } else {
+        std::cout << "\nNiektóre testy interpolacji nie przeszły!" << std::endl;
+        return 1;
+    }
 }

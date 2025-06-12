@@ -1,0 +1,24 @@
+# Dodaj katalog include
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+# Proste testy bez Google Test
+add_executable(test_linear_systems test_linear_systems.cpp)
+target_link_libraries(test_linear_systems AGH_Numerical_Methods)
+
+add_executable(test_approximation test_approximation.cpp)
+target_link_libraries(test_approximation AGH_Numerical_Methods)
+
+add_executable(test_differential_equations test_differential_equations.cpp)
+target_link_libraries(test_differential_equations AGH_Numerical_Methods)
+
+add_executable(test_integration test_integration.cpp)
+target_link_libraries(test_integration AGH_Numerical_Methods)
+
+add_executable(test_interpolation test_interpolation.cpp)
+target_link_libraries(test_interpolation AGH_Numerical_Methods)
+
+add_executable(test_nonlinear_equations test_nonlinear_equations.cpp)
+target_link_libraries(test_nonlinear_equations AGH_Numerical_Methods)
+
+add_executable(run_tests run_tests.cpp)
+target_link_libraries(run_tests AGH_Numerical_Methods)

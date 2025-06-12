@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/integration.h
+vector
+-
+functional
+-
+string
+-
+
+/workspaces/MN_Projekt_zaliczeniowy/AGH_Numerical_Methods/tests/test_integration.cpp
+integration.h
+/workspaces/MN_Projekt_zaliczeniowy/AGH_Numerical_Methods/tests/integration.h
+iostream
+-
+iomanip
+-
+cmath
+-
+cassert
+-
+chrono
+-
+

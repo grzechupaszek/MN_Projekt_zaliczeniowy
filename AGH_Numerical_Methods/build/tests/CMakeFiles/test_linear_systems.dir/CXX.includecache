@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/linear_systems.h
+vector
+-
+string
+-
+
+/workspaces/MN_Projekt_zaliczeniowy/AGH_Numerical_Methods/tests/test_linear_systems.cpp
+linear_systems.h
+/workspaces/MN_Projekt_zaliczeniowy/AGH_Numerical_Methods/tests/linear_systems.h
+iostream
+-
+iomanip
+-
+cmath
+-
+cassert
+-
+functional
+-
+

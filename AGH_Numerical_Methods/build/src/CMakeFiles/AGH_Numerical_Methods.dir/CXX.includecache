@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/approximation.h
+vector
+-
+functional
+-
+string
+-
+
+../include/linear_systems.h
+vector
+-
+string
+-
+
+/workspaces/MN_Projekt_zaliczeniowy/AGH_Numerical_Methods/src/approximation.cpp
+approximation.h
+/workspaces/MN_Projekt_zaliczeniowy/AGH_Numerical_Methods/src/approximation.h
+linear_systems.h
+/workspaces/MN_Projekt_zaliczeniowy/AGH_Numerical_Methods/src/linear_systems.h
+cmath
+-
+algorithm
+-
+numeric
+-
+iostream
+-
+fstream
+-
+iomanip
+-
+

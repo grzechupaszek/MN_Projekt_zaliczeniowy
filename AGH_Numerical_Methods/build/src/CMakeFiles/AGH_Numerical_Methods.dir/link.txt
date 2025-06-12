@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libagh_numerical_methods.a  CMakeFiles/AGH_Numerical_Methods.dir/approximation.cpp.o CMakeFiles/AGH_Numerical_Methods.dir/differential_equations.cpp.o CMakeFiles/AGH_Numerical_Methods.dir/integration.cpp.o CMakeFiles/AGH_Numerical_Methods.dir/interpolation.cpp.o CMakeFiles/AGH_Numerical_Methods.dir/linear_systems.cpp.o CMakeFiles/AGH_Numerical_Methods.dir/nonlinear_equations.cpp.o CMakeFiles/AGH_Numerical_Methods.dir/numerical_methods.cpp.o
+/usr/bin/ranlib ../lib/libagh_numerical_methods.a

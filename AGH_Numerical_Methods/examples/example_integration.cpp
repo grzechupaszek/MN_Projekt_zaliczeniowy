@@ -16,7 +16,7 @@
 #include <fstream>
 #include <cmath>
 #include <functional>
-
+#include <chrono>
 using namespace agh_numerical;
 
 /**

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/differential_equations.h
+vector
+-
+functional
+-
+string
+-
+
+/workspaces/MN_Projekt_zaliczeniowy/AGH_Numerical_Methods/tests/test_differential_equations.cpp
+differential_equations.h
+/workspaces/MN_Projekt_zaliczeniowy/AGH_Numerical_Methods/tests/differential_equations.h
+iostream
+-
+iomanip
+-
+cmath
+-
+cassert
+-
+functional
+-
+

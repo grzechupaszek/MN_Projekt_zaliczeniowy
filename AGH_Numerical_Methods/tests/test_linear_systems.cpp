@@ -8,7 +8,7 @@
 #include <iomanip>
 #include <cmath>
 #include <cassert>
-
+#include <functional>
 using namespace agh_numerical;
 
 /**
@@ -374,4 +374,20 @@ bool run_all_linear_systems_tests() {
               << (100.0 * passed / total) << "%)" << std::endl;
     
     return (passed == total);
+}
+/**
+ * @brief Główna funkcja programu testowego
+ */
+int main() {
+    std::cout << "Uruchamianie testów układów równań liniowych..." << std::endl;
+    
+    bool all_tests_passed = run_all_linear_systems_tests();
+    
+    if (all_tests_passed) {
+        std::cout << "\n✓ Wszystkie testy przeszły pomyślnie!" << std::endl;
+        return 0;
+    } else {
+        std::cout << "\n✗ Niektóre testy nie przeszły!" << std::endl;
+        return 1;
+    }
 }

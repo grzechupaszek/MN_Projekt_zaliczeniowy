@@ -8,7 +8,7 @@
 #include <iomanip>
 #include <cmath>
 #include <functional>
-
+#include <chrono>
 using namespace agh_numerical;
 
 /**
@@ -418,4 +418,13 @@ bool run_all_nonlinear_equations_tests() {
               << (100.0 * passed / total) << "%)" << std::endl;
     
     return (passed == total);
+}
+int main() {
+    if (run_all_nonlinear_equations_tests()) {
+        std::cout << "\nWszystkie testy równań nieliniowych przeszły pomyślnie!" << std::endl;
+        return 0;
+    } else {
+        std::cout << "\nNiektóre testy równań nieliniowych nie przeszły!" << std::endl;
+        return 1;
+    }
 }
