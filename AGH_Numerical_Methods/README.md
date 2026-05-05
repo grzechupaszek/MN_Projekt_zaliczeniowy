@@ -238,12 +238,6 @@ doxygen Doxyfile
 - Kontrola błędów zaokrągleń i propagacji błędów
 - Walidacja wyników poprzez testy poprawności
 
-## Kontrybutorzy
-
-- **Główny programista**: Student Inżynierii Obliczeniowej AGH
-- **Supervisor akademicki**: Dr hab. inż. [Imię Nazwisko], prof. AGH
-- **Instytucja**: Akademia Górniczo-Hutnicza im. Stanisława Staszica
-
 ## Bibliografia i źródła
 
 1. Burden, R.L., Faires, J.D., Burden, A.M. *Numerical Analysis*, 10th Edition, Cengage Learning, 2015.
